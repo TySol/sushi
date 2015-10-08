@@ -2,6 +2,11 @@
 
 <h1>Listing Products</h1>
 
+<% if user_signed_in? %>
+  <%= link_to 'New Pin', new_pin_path %> 
+<% end %> 
+
+
 <table>
   <thead>
     <tr>
@@ -13,10 +18,14 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
+        <td><%= image_tag pin.image.url(:medium) %></td>
         <td><%= product.description %></td>
         <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+       <% if pin.user == current_user %>
+        <td><%= link_to 'Edit', edit_casa_path(casa) %></td>
+        <td><%= link_to 'Destroy', casa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %> 
+
       </tr>
     <% end %>
   </tbody>
