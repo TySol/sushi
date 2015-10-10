@@ -6,7 +6,7 @@
       <div class="panel-heading center">
 
 
-<%= image_tag @pin.image.url(:medium) %>
+<%= image_tag @product.image.url(:medium) %>
 
 </div>
       <div class="panel-body">
@@ -17,9 +17,9 @@
   <%= @product.description %>
 </p>
 
-<% if @pin.user == current_user %>
-  <%= link_to 'Edit', edit_pin_path(@pin) %>
-<% end %> <%= link_to 'Back', pins_path %>
+<% if @product.user == current_user %>
+  <%= link_to 'Edit', edit_product_path(@product) %>
+<% end %> <%= link_to 'Back', products_path %>
 
       </div>
     </div>

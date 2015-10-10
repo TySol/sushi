@@ -5,6 +5,7 @@ class Product < ActiveRecord::Base
 
      validates :image, presence: true   
 validates :description, presence: true
+validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
-end
+
 end
