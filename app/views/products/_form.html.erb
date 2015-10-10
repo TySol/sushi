@@ -11,12 +11,15 @@
     </div>
   <% end %>
 
-  <div class="form-group">    
+  <div class="form-group">  
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+    <br>
     <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>   
     <br>
     <%= f.label :description %><br>
-    <%= f.text_field :description, :size=>"100" %>
+    <%= f.text_field :description, class: "form-control" %>
 
   </div>
   <div class="actions">
