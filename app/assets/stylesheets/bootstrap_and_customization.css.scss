@@ -63,6 +63,19 @@ $jumbotron-bg:                                white;
 }
 
 
+@media(max-width:1024px){
+	.jumbotron {
+	width: 980px;
+}	
+}
+
+@media(max-width:768px){
+.jumbotron {
+	width: 720px;
+}	
+}
+
+
 @media(max-width:640px){
 .jumbotron {
 	width: 600px;
