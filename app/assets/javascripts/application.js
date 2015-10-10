@@ -18,4 +18,5 @@
 //= require turbolinks
 //= require masonry/jquery.masonry
 //= require masonry/jquery.imagesloaded.min
+//= require owl.carousel
 //= require_tree .

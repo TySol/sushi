@@ -29,6 +29,7 @@ gem 'paperclip', '~> 4.3.1'
 gem 'aws-sdk', '~> 2.1.28'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap', '~> 1.0.1'
+gem 'owlcarousel-rails'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
