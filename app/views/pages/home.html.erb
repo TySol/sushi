@@ -1,11 +1,125 @@
-<div class="jumbotron center">
-     <h1>Welcome</h1>
-     <% if user_signed_in? %>
-          # do something
-     <% else %>
-       <p>
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-       </p>
-  <% end %>  
+<!DOCTYPE HTML>
+<html>
+<body>
+
+
+	   <div class="jumbotron">
+		<div class="header">
+			<div class="logo">
+				<a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
+			</div>
+		</div>
+		<div class="top-menu">
+			<ul>
+      			<li><%= link_to "Home", root_path %></li>
+        		<li><%= link_to "About", about_path %></li>
+				<li class="submemu"><a href="menu.html">Menu</a></li>
+				<li class="submemu"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="clear">
+		</div>
+			
+
+
+
+<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="assets/slide3.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="assets/slide1.jpg" alt="GTA V"></div>
+  <div class="item"><img src="assets/slide2.jpg" alt="Mirror Edge"></div>
+ 
 </div>
+
+
+ <script type="text/javascript">
+  
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+ 	  autoPlay : true,
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 200,
+      paginationSpeed : 400,
+      // singleItem:true,
+      autoHeight : true,
+ 	
+
+      // "singleItem:true" is a shortcut for:
+      items : 1, 
+      itemsDesktop : true,
+      itemsDesktopSmall : true,
+      itemsTablet: true,
+       itemsMobile : true,
+       itemsMobileSmall: true,
+    itemsScaleUp : true,
+ 
+  });
+ 
+});
+
+    </script>
+
+
+  <div class="row">
+        <div class="col-md-4">
+          <h2>About Us</h2>
+          <%= image_tag("CHOKO ONE.jpg", :alt => "rss feed") %>
+          <p><a class="btn btn-default" href="about.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Our Menu</h2>
+          <%= image_tag("COCONUT SHRIMP.jpg", :alt => "rss feed") %>
+          <p><a class="btn btn-default" href="menu.html" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Cocktail Menu</h2>
+          <%= image_tag("Happyhour.jpg", :alt => "rss feed") %>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+
+
+		<div class="clear">
+		</div>
+
+
+
+        <br />
+		<div class="main">
+			<div class="pin">
+				<h2>Reservations</h2>
+				<h2>+1 (234) 4567-890</h2>
+				
+			</div>
+			<div class="para">
+				<p>Open 9:00am - 10:00pm. Monday - Saturday. Closed Sunday <br />Location: Malecon entre 5 de Mayo y Callejon Constitución
+La Paz, Baja California Sur</p>
+				
+			</div>
+		</div>
+		<div class="clear">
+			
+		</div>
+        <br />
+		<div class="footer">
+			<div class="footer-menu">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li class="submemu"><a href="about.html">About</a></li>
+					<li class="submemu"><a href="Menu.html">Menu</a></li>
+					<li class="submemu"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
