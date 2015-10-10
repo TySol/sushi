@@ -61,3 +61,18 @@ $jumbotron-bg:                                white;
 .panel-heading {
 	background: white;
 }
+
+
+@media(max-width:640px){
+.jumbotron {
+	width: 600px;
+}
+}
+
+@media(max-width:480px) {
+
+.jumbotron {
+	width: 440px;
+}
+
+}
