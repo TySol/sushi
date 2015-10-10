@@ -63,20 +63,21 @@ $(document).ready(function() {
   <div class="row">
         <div class="col-md-4">
           <h2>About Us</h2>
-          <%= image_tag("CHOKO ONE.jpg", :alt => "rss feed") %>
-          <p><a class="btn btn-default" href="about.html" role="button">View details &raquo;</a></p>
+          <%= link_to image_tag("CHOKO ONE.jpg"), about_path %>
+		  <p><%= link_to "View details", about_path, class: "btn btn-default" %></p>
         </div>
         <div class="col-md-4">
           <h2>Our Menu</h2>
-          <%= image_tag("COCONUT SHRIMP.jpg", :alt => "rss feed") %>
-          <p><a class="btn btn-default" href="menu.html" role="button">View details &raquo;</a></p>
+          <%= link_to image_tag("COCONUT SHRIMP.jpg"), products_path %>
+		  <p><%= link_to "View details", products_path, class: "btn btn-default" %></p>
        </div>
         <div class="col-md-4">
           <h2>Cocktail Menu</h2>
-          <%= image_tag("Happyhour.jpg", :alt => "rss feed") %>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <%= link_to image_tag("Happyhour.jpg"), products_path %>		  
+          <p><%= link_to "View details", products_path, class: "btn btn-default" %></p>
         </div>
       </div>
+
 
 
 
