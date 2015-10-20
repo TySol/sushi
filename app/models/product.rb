@@ -1,6 +1,10 @@
 class Product < ActiveRecord::Base
 	belongs_to :user 
-	
+	has_many :product_styles
+	has_many :styles, through: :product_styles
+	has_many :product_ingredients
+	has_many :ingredients, through: :product_ingredients
+
      has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
 
      validates :image, presence: true   
