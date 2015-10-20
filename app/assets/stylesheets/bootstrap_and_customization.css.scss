@@ -23,6 +23,7 @@ $jumbotron-bg:                                white;
 	font-family: 'Arial';
 }
 
+
 .jumbotron h2 {
 	font-size: 30px;
 	font-family: 'Stalemate', cursive;
@@ -58,8 +59,39 @@ $jumbotron-bg:                                white;
 	margin-bottom: 1.5em;
 }
 
-.panel-heading {
-	background: white;
+.panel-default {
+    border-color: white;
+}
+
+.panel-default > .panel-heading {
+    background-color: white;
+    border-color: white;
+}
+
+.col-md-3 {
+    padding-bottom: 4em;
+}
+
+
+.title-index {
+	color: red;
+    font-size: 18px;
+	font-family: 'Electrolize', sans-serif;
+}
+
+.title-show {
+    color: red;
+    font-size: 18px;
+	font-family: 'Electrolize', sans-serif;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 

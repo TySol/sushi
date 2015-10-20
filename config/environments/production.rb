@@ -78,4 +78,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { :host => 'http://sushione.herokuapp.com/' }
 
+Paperclip::Attachment.default_options[:storage] = :s3
+Paperclip::Attachment.default_options[:s3_protocol] = 'http'
+Paperclip::Attachment.default_options[:s3_credentials] =
+  { :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'] }
+Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
+Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
+
 end

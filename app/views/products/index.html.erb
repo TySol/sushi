@@ -25,11 +25,11 @@
   <%= link_to 'New Menu Item', new_product_path %> 
 <% end %> 
 
-<div id="products" class="transitions-enabled">
+<div class="row">
     <% @products.each do |product| %>
-     <div class="box panel panel-default">
+     <div class="col-sm-6 col-md-3">
       <div class="panel-heading center">
-      <%= product.title %>
+      <span class="title-index"><%= product.title %></span>
       </div>
         <%= link_to image_tag(product.image.url(:medium)), product %>
         <div class="panel-body">
@@ -44,6 +44,7 @@
       </div>
     <% end %>
 </div>
+
 
 
 <div class="center">    
