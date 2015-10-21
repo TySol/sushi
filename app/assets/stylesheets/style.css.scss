@@ -51,18 +51,19 @@ body{
 .logo{
 	text-align:center;
 }
-.logo img{
-	width: 320px;
+
+.logo img {
+    width: 320px;
+    margin: auto auto auto 5%;
 }
+
 .top-menu ul li{
 	display:inline;
 	
 }
 .top-menu{
 	margin-top:5px;
-	margin-right: 45px;
 	text-align: center;
-	margin-bottom: 2em;
 }
 .top-menu ul li a{
 	font-size: 18px;

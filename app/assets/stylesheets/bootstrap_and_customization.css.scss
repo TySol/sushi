@@ -101,6 +101,33 @@ $jumbotron-bg:                                white;
 	width: auto !important;
 }
 
+.dropdown-menu {
+	    margin-left: 26%;
+}
+
+
+.parent {
+    width: 50%;
+    height: 100%;
+    display: table;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.parent > .child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.parent > .child a {
+    vertical-align: middle;
+    font-size: 16px;
+	padding: 1px 15px;
+	line-height: 18px;
+	font-family: 'Electrolize', sans-serif;
+}
+
+
 @media(max-width:1024px){
 	.jumbotron {
 	width: 980px;
