@@ -20,8 +20,13 @@
   <%= @product.description %>
 </p>
 
+<% if @product.styles.any? %>
 <p>Style Tags: <%= render @product.styles %></p>
+<% end %>
+
+<% if @product.ingredients.any? %>
 <p>Ingredient Tags: <%= render @product.ingredients %></p>
+<% end %>
 
 <% if @product.user == current_user %>
   <%= link_to 'Edit', edit_product_path(@product) %>

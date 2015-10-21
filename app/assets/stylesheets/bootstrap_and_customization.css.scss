@@ -97,6 +97,10 @@ $jumbotron-bg:                                white;
 }
 
 
+.input_checkbox input {
+	width: auto !important;
+}
+
 @media(max-width:1024px){
 	.jumbotron {
 	width: 980px;
