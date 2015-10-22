@@ -21,7 +21,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<% if user_signed_in? %>
+<% if user_signed_in? and current_user.admin? %>
   <%= link_to 'New Menu Item', new_product_path %> 
 <% end %> 
 
@@ -90,7 +90,7 @@
         <%= link_to image_tag(product.image.url(:medium)), product %>
         <div class="panel-body">
         <%= product.description %>
-       <% if product.user == current_user %>
+       <% if user_signed_in? and (product.user == current_user || current_user.admin?) %>
        <div class="actions">
         <%= link_to 'Edit', edit_product_path(product) %>
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>

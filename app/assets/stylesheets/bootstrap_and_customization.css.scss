@@ -4,12 +4,22 @@ $body-bg:                                   #ecf0f1;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                             45px;
 $navbar-default-bg:                          white;
-$navbar-default-brand-color:     			 #c0392b;
+$navbar-default-brand-color:     			 #E00714;
 $brand-primary:                              #c0392b;
 $jumbotron-bg:                                white;
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+
+#notice {
+	color: red;
+    margin-left: 3em;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 
 .jumbotron {
 	margin-top: -2em;
@@ -43,6 +53,11 @@ $jumbotron-bg:                                white;
      font-weight: bold;
 }
 
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
 
 #owl-demo .item img{
     display: block;

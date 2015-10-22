@@ -2,7 +2,6 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :correct_user, only: [:edit, :update, :destroy]
-  
  
   # GET /products
   # GET /products.json
@@ -66,8 +65,10 @@ class ProductsController < ApplicationController
     end
 
     def correct_user
-      @product = current_user.products.find_by(id: params[:id])
-      redirect_to products_path, notice: "Not authorized to edit this" if @product.nil?
+      if current_user != @product.user and !current_user.admin?
+        flash[:danger] = "You are not authorized to edit this"
+        redirect_to products_path
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
