@@ -7,7 +7,7 @@ gem 'rails', '4.2.4'
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -30,6 +30,11 @@ gem 'aws-sdk', '< 2.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap', '~> 1.0.1'
 gem 'owlcarousel-rails'
+gem 'activeadmin', github: 'activeadmin'
+gem "formtastic", github: "justinfrench/formtastic"
+gem "ransack", github: "activerecord-hackery/ransack"
+
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
