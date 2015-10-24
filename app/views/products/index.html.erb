@@ -1,5 +1,4 @@
-
-     <div class="jumbotron">
+<div class="responsive-container ">
     <div class="header">
       <div class="logo">
         <a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
@@ -101,9 +100,8 @@
     <% end %>
 </div>
 
-
-
 <div class="center">    
-<%= will_paginate @products, renderer: BootstrapPagination::Rails %> </div>
+<%= will_paginate @products, renderer: BootstrapPagination::Rails %> 
+</div>
 
 </div>

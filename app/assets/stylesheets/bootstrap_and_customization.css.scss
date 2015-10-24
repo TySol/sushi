@@ -142,30 +142,55 @@ $jumbotron-bg:                                white;
 	font-family: 'Electrolize', sans-serif;
 }
 
+.bann-grid {
+  float: left;
+  width: 25%;
+  padding: 0px 0px 0px 10px;
+}
+
+.responsive-container {
+    background-color: white;
+    max-width: 100%;
+    margin: -100px auto 0px auto;
+    padding: 100px 45px 100px 45px;
+}
 
 @media(max-width:1024px){
-	.jumbotron {
-	width: 980px;
+	.responsive-container  {
+    width: 90%;
+    margin: -100px auto 0px auto;
+    padding: 100px 45px 100px 45px;
 }	
 }
 
+@media (min-width: 992px) {
+.col-md-3 {
+    width: 25%;
+}
+}
+
 @media(max-width:768px){
-.jumbotron {
+.responsive-container {
 	width: 720px;
+    margin: -100px auto 0px auto;
+    padding: 100px 45px 100px 45px;
 }	
 }
 
 
 @media(max-width:640px){
-.jumbotron {
+.responsive-container  {
 	width: 600px;
+    margin: -100px auto 0px 0px;
+    padding: 100px 45px 100px 45px;
 }
 }
 
 @media(max-width:480px) {
-
-.jumbotron {
-	width: 440px;
+.responsive-container  {
+	width: 400px;
+    margin: -100px auto 0px 0px;
+    padding: 100px 45px 100px 45px;
 }
 
 }
