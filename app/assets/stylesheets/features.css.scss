@@ -1,0 +1,189 @@
+                                        
+.wedding-news {
+    padding: 4em 0;
+    text-align: center;
+}
+.wedding-news h3 {
+    font-size: 3.5em;
+    color: #652840;
+    font-family: 'Sail-Regular';
+    text-transform: capitalize;
+}
+.wedding-inner h5{
+    font-size: 1.2em;
+    color: #222;
+    padding:1em 0
+}
+.wedding-inner p {
+    font-size: 1em;
+    color: #777;
+    line-height:1.8em
+}
+.wedding-inner h4 a {
+    text-decoration: none;
+     font-size: 1em;
+    color: #222;
+}
+.wedding-inner h4 a:hover {
+    color: #652840;
+}
+.wedding-grid {
+    margin-top: 3em;
+}
+.wedding-inner {
+    margin-bottom: 2em;
+}
+
+img.zoom-img {
+    -webkit-transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1, 1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+img.zoom-img:hover {
+    -webkit-transform: scale(1.1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 750ms;
+    -moz-transform: scale(1.1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 750ms;
+    overflow: hidden;
+}
+
+/*-- gallery --*/
+.wedding-section{
+    padding:4em 0;
+    text-align:center;
+}
+.wedding-section h2 {
+  font-size: 3.5em;
+  color: #652840;
+  font-family: 'Sail-Regular';
+  text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+ @media(max-width:1080px){
+
+.wedding-section h2, .wedding-section h2 {
+    font-size: 3em;
+}
+.wedding-inner p {
+    font-size: 0.965em;
+}
+
+.wedding-news h3 {
+    font-size: 3em;
+}
+
+.wedding-inner h5 {
+    font-size: 1em;
+}
+
+}
+
+
+
+@media (max-width: 991px){
+
+.wedding-news, .wedding-section {
+    padding: 3em 0;
+}
+
+.wedding-section h2, .wedding-section h2 {
+    font-size: 2.5em;
+}
+.wedding-inner p {
+    font-size: 0.95em;
+}
+
+.wedding-news h3 {
+    font-size: 2.5em;
+}
+
+.weeding-new {
+    float: left;
+    width: 33.3%;
+}
+
+}
+
+
+@media (max-width: 640px){
+
+.wedding-news, .wedding-section {
+    padding: 2em 0;
+}
+
+.wedding-news h3 {
+    font-size: 2em;
+}
+
+.wedding-grid {
+    margin-top: 2em;
+}
+
+.wedding-inner h4 a {
+    font-size: 0.85em;
+}
+
+}
+
+
+@media (max-width: 480px){
+
+.wedding-section h2, .wedding-section h2 {
+    font-size: 2em;
+}
+.wedding-news, .wedding-section {
+    padding: 1em 0;
+}
+
+.wedding-inner p {
+    font-size: 0.92em;
+}
+
+.weeding-new {
+    width: 100%;
+}
+.wedding-inner {
+    margin-bottom: 1em;
+}
+.weeding-new:nth-child(2) {
+    margin-top: 1em;
+}
+.weeding-new:nth-child(3) {
+    margin-top: 1em;
+}
+.wedding-inner h5 {
+    font-size: 0.95em;
+    padding: 0.8em;
+}
+
+}
+@media (max-width: 320px){
+
+
+.wedding-section h2, .wedding-section h2 {
+    font-size: 2.3em;
+}
+
+.wedding-news h3 {
+    font-size: 2.2em;
+}
+
+.wedding-grid {
+    margin-top: 1em;
+}
+
+.weeding-new {
+    padding: 0;
+}
+
+.wedding-section h2 {
+    margin-bottom: 0.5em;
+}
+
+}
