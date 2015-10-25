@@ -2,10 +2,14 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+
+
 $ ->
-  $('#products').imagesLoaded ->
-    $('#products').masonry
-      itemSelector: '.box'
-      isFitWidth: true
-
-
+	$('#products').isotope
+	  itemSelector: '.box'
+	  layoutMode: 'cellsByRow'
+	  percentPosition: true,
+		cellsByRow: {
+		  columnWidth: '.grid-sizer',
+		  rowHeight: '.grid-sizer'
+		}
