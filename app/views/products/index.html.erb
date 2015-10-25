@@ -83,7 +83,7 @@
 
 <div id="products" class="transitions-enabled">
     <% @products.each do |product| %>
-      <div class="box panel panel-default">
+      <div class="box panel panel-default fixmargin">
           <div class="title-index center"><%= product.title %></div>
         <%= link_to image_tag(product.image.url(:medium)), product %>
         <div class="panel-body">
