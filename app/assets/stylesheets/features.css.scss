@@ -1,4 +1,5 @@
-                                        
+ 
+                                       
 .wedding-news {
     padding: 0; 
 }
@@ -22,7 +23,7 @@
 }
 .wedding-inner h4 a {
     text-decoration: none;
-     font-size: 1em;
+    font-size: 1em;
     color: #222;
 }
 .wedding-inner h4 a:hover {
@@ -71,6 +72,16 @@ img.zoom-img:hover {
   text-transform: capitalize;
     margin-bottom: 1em;
 }
+
+
+@media (min-width:1200px) { 
+    .wedding-news {
+        min-width: 1050px;
+    }
+
+ }
+
+
 
  @media(max-width:1080px){
 

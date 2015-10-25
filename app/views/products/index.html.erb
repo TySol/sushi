@@ -38,7 +38,14 @@
       <% Style.all.each do |style| %>
         <li><%= link_to style.name, style_path(style) %></li>
         <% end %>
-
+    <!--     <%  if user_signed_in? %>
+        <li class='divider'></li>
+        <li>
+          <%= link_to (new_style_path)  do %>
+            New Style
+          <%  end %>
+        </li>
+        <%  end %> -->
     </ul>
   </div>
 </div>
@@ -53,7 +60,14 @@
       <% Ingredient.all.each do |ingredient| %>
         <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
         <% end %>
-
+     <!--     <% if user_signed_in? %>
+        <li class='divider'></li>
+        <li>
+          <%= link_to (new_ingredient_path)  do %>
+            New Ingredient
+          <%  end %>
+        </li>
+        <%  end %> -->
     </ul>
     </div>
   </div>

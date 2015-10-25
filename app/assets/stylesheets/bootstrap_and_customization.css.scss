@@ -11,6 +11,7 @@ $jumbotron-bg:                                white;
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
+
 #notice {
 	color: red;
     margin-left: 3em;
@@ -155,6 +156,7 @@ $jumbotron-bg:                                white;
     margin: -100px auto 0px auto;
     padding: 100px 45px 100px 45px;
 }
+
 
 @media(max-width:1024px){
 	.responsive-container  {
