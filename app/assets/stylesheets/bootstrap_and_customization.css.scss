@@ -158,6 +158,14 @@ $jumbotron-bg:                                white;
 }
 
 
+@media(max-width:1200px){
+    .responsive-container  {
+    width: 90%;
+    margin: -100px auto 0px auto;
+    padding: 100px 45px 100px 45px;
+}   
+}
+
 @media(max-width:1024px){
 	.responsive-container  {
     width: 90%;
