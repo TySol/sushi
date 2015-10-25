@@ -10,7 +10,7 @@
 .box {
   margin: 5px;
   width: 250px;
-  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .box img {
@@ -19,3 +19,8 @@
 
 .grid-item { width: 25%; }
 
+
+.grid-sizer {
+  width: 25%;
+  height: auto;
+}

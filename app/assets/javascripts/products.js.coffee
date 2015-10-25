@@ -7,9 +7,4 @@
 $ ->
 	$('#products').isotope
 	  itemSelector: '.box'
-	  layoutMode: 'cellsByRow'
-	  percentPosition: true,
-		cellsByRow: {
-		  columnWidth: '.grid-sizer',
-		  rowHeight: '.grid-sizer'
-		}
+	  layoutMode: 'fitRows'
