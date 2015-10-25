@@ -2,6 +2,10 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$('.grid').isotope
-  itemSelector: '.grid-item'
-  layoutMode: 'cellsByRow'
+$ ->
+  $('#products').imagesLoaded ->
+    $('#products').masonry
+      itemSelector: '.box'
+      isFitWidth: true
+
+
