@@ -30,6 +30,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap', '~> 1.0.1'
 gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
+gem 'masonry-rails', '~> 0.2.4'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
