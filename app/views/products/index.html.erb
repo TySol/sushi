@@ -85,10 +85,7 @@
                       <% @products.each do |product| %>
                 <div class="col-md-3 weeding-new"> 
                   <div class="wedding-inner">
-                    <div class="panel-heading center">
-                      <div class="title-index"><%= product.title %></div>
-                    </div>
-                            <%= link_to image_tag(product.image.url(:medium)), product %>
+                   
                         <div class="panel-body">
                             <%= product.description %>
                        <% if user_signed_in? and (product.user == current_user || current_user.admin?) %>
