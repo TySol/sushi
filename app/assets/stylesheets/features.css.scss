@@ -1,8 +1,8 @@
                                         
 .wedding-news {
-    padding: 0;
-    display: inline-block;
+    padding: 0; 
 }
+
 .wedding-news h3 {
     font-size: 3.5em;
     color: #652840;
@@ -30,11 +30,14 @@
 }
 .wedding-grid {
     margin-top: 3em;
-    display: inline-block;
-    float: left;
 }
 .wedding-inner {
     margin-bottom: 2em;
+
+}
+
+.weeding-new {
+    display: inline-block;
 
 }
 
@@ -108,8 +111,7 @@ img.zoom-img:hover {
 }
 
 .weeding-new {
-    float: left;
-    width: 33.3%;
+    width: 45%;
 }
 
 }
