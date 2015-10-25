@@ -1,7 +1,6 @@
 .weeding-new:nth-child(4n) {
-     margin-right: 0;
-    }
-
+         clear: right;
+        }
 
 .wedding-news {
     padding: 0; 
@@ -80,7 +79,7 @@ img.zoom-img:hover {
 @media (min-width:1200px) { 
 
     .weeding-new:nth-child(4n) {
-         margin-right: 0;
+         clear: right;
         }
 
     .wedding-news {
@@ -180,12 +179,7 @@ img.zoom-img:hover {
 .wedding-inner {
     margin-bottom: 1em;
 }
-.weeding-new:nth-child(2) {
-    margin-top: 1em;
-}
-.weeding-new:nth-child(3) {
-    margin-top: 1em;
-}
+
 .wedding-inner h5 {
     font-size: 0.95em;
     padding: 0.8em;

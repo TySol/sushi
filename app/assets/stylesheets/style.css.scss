@@ -238,10 +238,7 @@ background: #373B3A;
 .grids ul li{
 	float:left;
 }
-.grids ul li:nth-child(2),.grids ul li:nth-child(5),.grids ul li:nth-child(8) {
-	margin: 0px 50px;
-	margin-bottom: 25px;
-}
+
 .grids ul li img{
 	margin-bottom: 37px;
 	cursor:pointer;
@@ -387,10 +384,7 @@ color:#aaa;
 .Button-form ul li{
 	display:inline;
 }
-.Button-form ul li:nth-child(2)
-{
-	margin:0px;
-}
+
 .Button-form input[type="submit"],.Button-form input[type="reset"]{
 	border:none;
 	background-color: #999;
