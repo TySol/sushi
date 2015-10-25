@@ -1,4 +1,16 @@
- 
+
+.fixer {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.fixer > .fixie {
+    display: table-cell;
+    vertical-align: middle;
+}
+
                                        
 .wedding-news {
     padding: 0; 
