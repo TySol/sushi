@@ -1,4 +1,4 @@
-.weeding-new:nth-child(4n) {
+.weeding-new:nth-of-type(4n+1) {
          clear: right;
         }
 
@@ -77,10 +77,6 @@ img.zoom-img:hover {
 
 
 @media (min-width:1200px) { 
-
-    .weeding-new:nth-child(4n) {
-         clear: right;
-        }
 
     .wedding-news {
         min-width: 1050px;
