@@ -1,13 +1,8 @@
+.weeding-new:nth-child(4n) {
+     margin-right: 0;
+    }
 
-.fixer {
-    display: table;
-}
 
-.fixer > .fixie {
-    display: table-cell;
-}
-
-                                       
 .wedding-news {
     padding: 0; 
 }
@@ -83,6 +78,11 @@ img.zoom-img:hover {
 
 
 @media (min-width:1200px) { 
+
+    .weeding-new:nth-child(4n) {
+         margin-right: 0;
+        }
+
     .wedding-news {
         min-width: 1050px;
     }
