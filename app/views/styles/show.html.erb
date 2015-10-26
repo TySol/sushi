@@ -1,5 +1,4 @@
-
-     <div class="jumbotron">
+<div class="responsive-container">
     <div class="header">
       <div class="logo">
         <a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
@@ -7,8 +6,8 @@
     </div>
     <div class="top-menu">
       <ul>
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Menu", products_path %></li>
         <li><%= link_to "Contact", contact_path %></li>
       </ul>
@@ -24,8 +23,8 @@
   <%= link_to 'New Menu Item', new_product_path %> 
 <% end %> 
 
-<br>
-<br>
+<br />
+<br />
 
 
 <section class="parent">
@@ -83,7 +82,7 @@
 </section> <!-- parent -->
 
 
-<br>
+<br />
 
 
 <div class="container">
@@ -119,9 +118,10 @@
             });
  </script>
     
-
+<div class="clear"></div>   
 
 <div class="center">    
-<%= will_paginate @products, renderer: BootstrapPagination::Rails %> </div>
+<%= will_paginate @products, renderer: BootstrapPagination::Rails %> 
+</div>
 
 </div>
