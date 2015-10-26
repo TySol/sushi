@@ -5,7 +5,7 @@ class Product < ActiveRecord::Base
 	has_many :product_ingredients, dependent: :destroy
 	has_many :ingredients, through: :product_ingredients
 
-     has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+     has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>", :large => "1000x1000>" }
 
      validates :image, presence: true   
 validates :description, presence: true
