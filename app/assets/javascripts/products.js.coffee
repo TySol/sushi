@@ -8,3 +8,4 @@ $ ->
 	$('#products').isotope
 	  itemSelector: '.box'
 	  layoutMode: 'fitRows'
+	$('.box').css('margin-bottom',100)
