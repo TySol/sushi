@@ -100,18 +100,18 @@
     <% end %>
  </div>
 
-<script type="text/javascript">
-$container.imagesLoaded( function(){
-        $container.isotope({
-            itemSelector: '.box',
-            resizable: false, // disable normal resizing
-            // set columnWidth to a percentage of container width
-            masonry: { columnWidth: $container.width() / 5 }
-        }).isotope( 'reLayout' );
-});
-</script>
+        <script type="text/javascript">
+            $container.imagesLoaded( function(){
+                    $container.isotope({
+                        itemSelector: '.box',
+                        resizable: false, // disable normal resizing
+                        // set columnWidth to a percentage of container width
+                        masonry: { columnWidth: $container.width() / 4 }
+                    }).isotope( 'reLayout' );
+            });
+        </script>
     
-    <div class="clear"></div>   
+<div class="clear"></div>   
 
 <div class="center">    
 <%= will_paginate @products, renderer: BootstrapPagination::Rails %> 
