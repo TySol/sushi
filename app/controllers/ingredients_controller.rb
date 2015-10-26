@@ -2,7 +2,7 @@ class IngredientsController < ApplicationController
 
 	def show
 		@ingredient = Ingredient.find(params[:id])
-		@products = @ingredient.products.paginate(page: params[:page], per_page: 20)
+		@products = @ingredient.products.paginate(page: params[:page], per_page: 48)
 	end
 
 

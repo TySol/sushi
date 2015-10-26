@@ -2,7 +2,7 @@ class StylesController < ApplicationController
 
 	def show
 		@style = Style.find(params[:id])
-		@products = @style.products.paginate(page: params[:page], per_page: 20)
+		@products = @style.products.paginate(page: params[:page], per_page: 48)
 	end
 
 	def new
