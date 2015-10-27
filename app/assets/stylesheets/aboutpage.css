@@ -1,0 +1,114 @@
+.responsive-container h2 {
+    font-family: 'Stalemate', cursive;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    color: #494949;
+    font-size: 2em;
+}
+
+
+@media(max-width:1524px){
+    ol, ul {
+    list-style: none;
+}
+
+}
+
+
+@media(max-width:1024px){
+
+ol, ul {
+    list-style: circle outside none;
+}
+
+.para {
+    max-width: 900px;
+}
+
+.about {
+    padding: 3em 0;
+}
+
+
+}
+
+@media(max-width:980px){
+.about li img {
+    width: 50%;
+    float: left;
+    position: relative;
+   
+}
+
+.para {
+    max-width: 100%;
+}
+
+}
+
+
+/*--responsive--*/
+@media(max-width:768px){
+
+.para {
+    width: 400px;
+}
+
+.about p {
+    font-size: 0.9em;
+}
+
+.about-left {
+    margin:0 0 2em;
+}
+.about li img {
+    width: 50%;
+    float: left;
+    position: relative;
+
+}
+
+}
+
+
+
+
+/*--responsive--*/
+@media(max-width:480px){
+
+.parent {
+    margin-left: 10%;
+}
+
+
+.para {
+    width: 400px;
+}
+
+.about h5 {
+    font-size: 1.4em;
+}
+
+.about {
+    padding: 2em 0;
+}
+
+}
+
+/*--responsive--*/
+@media(max-width:320px){
+
+.para {
+    width: 280px;
+}
+
+.about-left {
+    padding: 0;
+}
+.about h5 {
+    font-size: 1.3em;
+}
+
+
+}

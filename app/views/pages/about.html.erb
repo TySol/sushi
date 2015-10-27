@@ -3,7 +3,7 @@
 <body>
 
 
-	   <div class="jumbotron">
+	   <div class="responsive-container">
 		<div class="header">
 			<div class="logo">
 				<a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
@@ -19,71 +19,48 @@
 		</div>
 		<div class="clear">
 		</div>
-			
 
 
-
-<div id="owl-demo" class="owl-carousel owl-theme"> 
-  <div class="item"><%= image_tag("slide3.jpg", :alt => "rss feed") %></div>
-  <div class="item"><%= image_tag("slide1.jpg", :alt => "rss feed") %></div>
-  <div class="item"><%= image_tag("slide2.jpg", :alt => "rss feed") %></div>
-</div>
+<br>
+<br>
+<h2>About Us</h2>
 
 
- <script type="text/javascript">
-  
-$(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
- 	  autoPlay : true,
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 200,
-      paginationSpeed : 400,
-      // singleItem:true,
-      autoHeight : true,
- 	
+	<div class="about">
+	
+			<div class="col-md-4 about-left">
+				<%= image_tag("Models2.jpg") %>
+				
+				<p>Estimados amigos, es un honor para nosotros comunicarnos  con ustedes por este privilegiado conducto para platicarles un poco de la vision y la misión de nuestra Restaurant de comida Japonesa y Thailandesa Sushi One. </p><br />
 
-      // "singleItem:true" is a shortcut for:
-      items : 1, 
-      itemsDesktop : true,
-      itemsDesktopSmall : true,
-      itemsTablet: true,
-       itemsMobile : true,
-       itemsMobileSmall: true,
-    itemsScaleUp : true,
- 
-  });
- 
-});
+				<p>Nuestra cocina fusiona la cocina oriental con un sabroso toque mexicano y Sudcaliforniano. </p><br />
 
-    </script>
+				<p>Son ustedes jóvenes y las familias los que han hecho posible el exito de Sushi One y a ustedes están dedicados nuestros esfuerzos. </p><br />
 
+				<p>Uno de los propósitos de nuestra visión en Sushi One es consolidarnos como uno de los mejores restaurantes de la Paz en nuestras especialidades de cocina oriental y estar en posibilidades de incrementar nuestra oferta de productos. </p><br />
 
-  <div class="row">
-        <div class="col-md-4">
-          <h2>About Us</h2>
-          <%= link_to image_tag("CHOKO ONE.jpg"), about_path %>
-		  <p><%= link_to "View details", about_path, class: "btn btn-default" %></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Our Menu</h2>
-          <%= link_to image_tag("COCONUT SHRIMP.jpg"), products_path %>
-		  <p><%= link_to "View details", products_path, class: "btn btn-default" %></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Cocktail Menu</h2>
-          <%= link_to image_tag("Happyhour.jpg"), products_path %>		  
-          <p><%= link_to "View details", products_path, class: "btn btn-default" %></p>
-        </div>
-      </div>
+			</div>
+			<div class="col-md-4 about-left">
+		
+			<p>La Misión de Sushi One, es convertirnos en líderes de la comida japonesa y Thai, a partir de un menú elaborado con los productos mas frescos y de la mayor calidad posible, cuidando siempre el bienestar y la salud de nuestros clientes; sin embargo pensamos que un restaurant no solo es  comida. En Sushi One estamos obsesionados con la calidad de nuestros productos y con su precio accesible, pero también con un servicio cordial y rápido. </p><br />
 
+			<p>Buenos productos terminados, servidos con la rapidez debida y un trato cortes y cordial, hacen posible que en Sushi One se respire una atmósfera distinta a las demas ofertas locales. </p><br />
 
+			<p>Por todo ello queremos agradecer la preferencia que nuestra clientela nos dispensa e invitar al gran publico para que nos conozca y puedan degustar de nuestro amplio menú. </p><br />
 
-		<div class="clear">
-		</div>
-
-
+			<p>Mucho agradeceríamos sus comentarios que nos enriquecerán para estar en la posibilidad de cumplir con sus expectativas y ofrecer siempre un mejor servicio. </p><br />
+			</div>
+			<div class="col-md-4 about-left">
+				<ul>
+					<li> <%= image_tag("b1.jpg") %></li>
+					<li> <%= image_tag("b2.jpg") %></li>
+					<li> <%= image_tag("b3.jpg") %></li>
+					<li> <%= image_tag("b4.jpg") %></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+	
+	</div>
 
         <br />
 		<div class="main">
@@ -105,15 +82,16 @@ La Paz, Baja California Sur</p>
 		<div class="footer">
 			<div class="footer-menu">
 				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<li class="submemu"><a href="about.html">About</a></li>
-					<li class="submemu"><a href="Menu.html">Menu</a></li>
-					<li class="submemu"><a href="contact.html">Contact</a></li>
+					<li><%= link_to "Home", root_path %></li>
+	        		<li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Menu", products_path %></li>
+					<li><%= link_to "Contact", contact_path %></li>
 				</ul>
 			</div>
 		</div>
 		</div>
-	</body>
+
+</body>
 </html>
 
 

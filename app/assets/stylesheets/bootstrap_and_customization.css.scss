@@ -199,10 +199,23 @@ $jumbotron-bg:                                white;
 }
 
 @media(max-width:480px) {
+
+.body {
+    width: 480px;
+}
 .responsive-container  {
 	width: 400px;
     margin: -100px auto 0px 0px;
     padding: 100px 45px 100px 45px;
+}
+
+.parent {
+    margin-left: 5%;
+}
+
+.top-menu li {
+    margin-left: -5%;
+
 }
 
 }
