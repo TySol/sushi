@@ -11,6 +11,10 @@ $jumbotron-bg:                                white;
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
+.top-menu ul {
+    margin-left: -2em;
+}
+
 
 #notice {
 	color: red;

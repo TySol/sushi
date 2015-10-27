@@ -71,12 +71,13 @@
 
         <br />
 		<div class="footer">
-			<div class="footer-menu">
+			<br /> <br />
+			<div class="top-menu">
 				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<li class="submemu"><a href="about.html">About</a></li>
-					<li class="submemu"><a href="Menu.html">Menu</a></li>
-					<li class="submemu"><a href="contact.html">Contact</a></li>
+					<li><%= link_to "Home", root_path %></li>
+	        		<li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Menu", products_path %></li>
+					<li><%= link_to "Contact", contact_path %></li>
 				</ul>
 			</div>
 		</div>
