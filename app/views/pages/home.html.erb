@@ -1,12 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<body>
 <p id="notice"><%= notice %></p>
 
 	   <div class="responsive-container">
 		<div class="header">
 			<div class="logo">
-				<a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
+				 <%= link_to image_tag("logo.png", :alt => "logo"), root_path %>
 			</div>
 		</div>
 		<div class="top-menu">
@@ -37,8 +34,8 @@ $(document).ready(function() {
  
  	  autoPlay : true,
       navigation : false, // Show next and prev buttons
-      slideSpeed : 200,
-      paginationSpeed : 400,
+      slideSpeed : 100,
+      paginationSpeed : 900,
       // singleItem:true,
       autoHeight : true,
  	
@@ -50,7 +47,7 @@ $(document).ready(function() {
       itemsTablet: true,
        itemsMobile : true,
        itemsMobileSmall: true,
-    itemsScaleUp : true,
+    	itemsScaleUp : true,
  
   });
  
@@ -72,8 +69,8 @@ $(document).ready(function() {
        </div>
         <div class="col-md-4">
           <h2>Cocktail Menu</h2>
-          <%= link_to image_tag("Happyhour.jpg"), products_path %>		  
-          <p><%= link_to "View details", products_path, class: "btn btn-default" %></p>
+          <%= link_to image_tag("Happyhour.jpg"), drinks_path %>		  
+          <p><%= link_to "View details", drinks_path, class: "btn btn-default" %></p>
         </div>
       </div>
 
@@ -114,8 +111,6 @@ La Paz, Baja California Sur</p>
 			</div>
 		</div>
 		</div>
-	</body>
-</html>
 
 
 

@@ -1,7 +1,7 @@
 <div class="responsive-container">
     <div class="header">
-      <div class="logo">
-        <a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
+     <div class="logo">
+         <%= link_to image_tag("logo.png", :alt => "logo"), root_path %>
       </div>
     </div>
     <div class="top-menu">
@@ -73,7 +73,7 @@
   </div>
 
 <div class="child">
- <%= link_to 'Drinks', " ", class: "btn btn-default btn-danger dropdown-toggle" %>
+ <%= link_to 'Bebidas', drinks_path, class: "btn btn-default btn-danger dropdown-toggle" %>
 </div>
 
 </section> <!-- end parent -->
