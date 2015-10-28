@@ -1,0 +1,120 @@
+<p id="notice"><%= notice %></p>
+
+<div class="responsive-container">
+
+
+<%= render partial: "shared/links" %>
+
+
+
+<section class="parent">
+
+<div class="child">
+  <div class="dropdown">
+    <%= link_to '#', class: "btn btn-default btn-danger dropdown-toggle", "data-toggle" => "dropdown" do %>
+      Styles <b class="caret"></b>
+    <% end %>
+    <ul class='dropdown-menu'>
+    	 <li><%= link_to "All", products_path %></li>
+      <% Style.all.each do |style| %>
+        <li><%= link_to style.name, style_path(style) %></li>
+        <% end %>
+    <!--     <%  if user_signed_in? %>
+        <li class='divider'></li>
+        <li>
+          <%= link_to (new_style_path)  do %>
+            New Style
+          <%  end %>
+        </li>
+        <%  end %> -->
+    </ul>
+  </div>
+</div>
+
+
+  <div class="child">
+    <div class="dropdown">
+    <%= link_to '#', class: "btn btn-default btn-danger dropdown-toggle", "data-toggle" => "dropdown" do %>
+      Ingredients <b class="caret"></b>
+    <% end %>
+    <ul class='dropdown-menu'>
+    	<li><%= link_to "All", products_path %></li>
+      <% Ingredient.all.each do |ingredient| %>
+        <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+        <% end %>
+     <!--     <% if user_signed_in? %>
+        <li class='divider'></li>
+        <li>
+          <%= link_to (new_ingredient_path)  do %>
+            New Ingredient
+          <%  end %>
+        </li>
+        <%  end %> -->
+    </ul>
+    </div>
+  </div>
+
+<div class="child">
+ <%= link_to 'Menu', products_path, class: "btn btn-default btn-danger dropdown-toggle" %>
+</div>
+
+</section> <!-- end parent -->
+
+
+
+
+<div id="owl2" class="owl-carousel owl-theme"> 
+  <div class="item"><%= image_tag("s1.jpg", :alt => " ") %></div>
+  <div class="item"><%= image_tag("s3.jpg", :alt => " ") %></div>
+  <div class="item"><%= image_tag("s2.jpg", :alt => " ") %></div>
+  <div class="item"><%= image_tag("s7.jpg", :alt => " ") %></div>
+  <div class="item"><%= image_tag("s5.jpg", :alt => " ") %></div>
+  <div class="item"><%= image_tag("s8.jpg", :alt => " ") %></div>
+</div>
+
+
+ <script type="text/javascript">
+  
+$(document).ready(function() {
+ 
+  $("#owl2").owlCarousel({
+ 
+ 	  autoPlay : false,
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 400,
+      paginationSpeed : 200,
+      // singleItem:true,
+      autoHeight : false,
+ 	
+
+      // "singleItem:true" is a shortcut for:
+      items : 3, 
+      itemsDesktop : true,
+      itemsDesktopSmall : true,
+      itemsTablet: true,
+       itemsMobile : true,
+       itemsMobileSmall: true,
+    itemsScaleUp : true,
+ 
+  });
+ 
+});
+
+    </script>
+
+<div class="drink-container">
+<%= image_tag("SushiDrinks.jpg", :alt => " ") %>
+</div>
+
+<div class="clear">
+
+</div>
+<br />
+</div>
+
+
+
+
+
+
+

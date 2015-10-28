@@ -1,24 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<body>
+<div class="responsive-container">
 
-
-	   <div class="responsive-container">
-		<div class="header">
-			<div class="logo">
-				<a href="index.html"><%= image_tag("logo.png", :alt => "rss feed") %></a>
-			</div>
-		</div>
-		<div class="top-menu">
-			<ul>
-      			<li><%= link_to "Home", root_path %></li>
-        		<li><%= link_to "About", about_path %></li>
-				<li><%= link_to "Menu", products_path %></li>
-				<li><%= link_to "Contact", contact_path %></li>
-			</ul>
-		</div>
-		<div class="clear">
-		</div>
+<%= render partial: "shared/links" %>
 			
 
 <div class="grids">
@@ -62,28 +44,15 @@
 	<div class="clear"> </div>
 
 </div>
-
-			</div>
+</div>
 			
 	
-		<div class="clear">
-		</div>
+<div class="clear">
+</div>
 
-        <br />
-		<div class="footer">
-			<br /> <br />
-			<div class="top-menu">
-				<ul>
-					<li><%= link_to "Home", root_path %></li>
-	        		<li><%= link_to "About", about_path %></li>
-					<li><%= link_to "Menu", products_path %></li>
-					<li><%= link_to "Contact", contact_path %></li>
-				</ul>
-			</div>
-		</div>
-		</div>
-	</body>
-</html>
+<%= render partial: "shared/footer" %>
+
+</div>
 
 
 
