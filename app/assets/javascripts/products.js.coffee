@@ -3,16 +3,16 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-$(window).load ->
-	$('#products').isotope
-	  itemSelector: '.box'
-	  layoutMode: 'fitRows'
-	  $('.box').css('margin-bottom',40)
-
-
 $(document).ready -> 
 	$('#products').isotope
 	  itemSelector: '.box'
 	  layoutMode: 'fitRows'
-	  $('.box').css('margin-bottom',40)
+
+
+$(window).load ->
+	$('#products').isotope
+	  itemSelector: '.box'
+	  layoutMode: 'fitRows'
+	  $('.box').css('padding-bottom',40)
+
 
