@@ -16,25 +16,25 @@
 
 
 <p>
-  <strong>Description:</strong>
+  <strong>Descripción:</strong>
   <%= @product.description %>
 </p>
 
 <% if @product.styles.any? %>
-<p>Style Tags: <%= render @product.styles %></p>
+<p>Estilo Etiquetas: <%= render @product.styles %></p>
 <% end %>
 
 <% if @product.ingredients.any? %>
-<p>Ingredient Tags: <%= render @product.ingredients %></p>
+<p>Ingrediente Etiquetas: <%= render @product.ingredients %></p>
 <% end %>
 
 
 <% if user_signed_in? and (@product.user == current_user || current_user.admin?) %>
-  <%= link_to 'Edit', edit_product_path(@product) %>  &nbsp; &nbsp; &nbsp; &nbsp;
+  <%= link_to 'Editar', edit_product_path(@product) %>  &nbsp; &nbsp; &nbsp; &nbsp;
 <% end %> 
-<%= link_to 'Back', products_path %> &nbsp; &nbsp; &nbsp; &nbsp;
+<%= link_to 'Atrás', products_path %> &nbsp; &nbsp; &nbsp; &nbsp;
 <% if user_signed_in? and current_user.admin? %>
-<%= link_to "[Delete Item]", @product, method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "[Eliminar Elemento]", @product, method: :delete, data: { confirm: "Are you sure?" } %>
 <% end %>
 
       </div>

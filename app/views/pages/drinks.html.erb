@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 	   <div class="responsive-container">
 		<div class="header">
 			<div class="logo">
@@ -17,6 +18,10 @@
 		<div class="clear">
 		</div>
 			
+<div class="responsive-container">
+
+
+<%= render partial: "shared/links" %>
 
 
 
@@ -29,6 +34,10 @@
     <% end %>
     <ul class='dropdown-menu'>
     	 <li><%= link_to "All", products_path %></li>
+      Estilos <b class="caret"></b>
+    <% end %>
+    <ul class='dropdown-menu'>
+    	 <li><%= link_to "Todas", products_path %></li>
       <% Style.all.each do |style| %>
         <li><%= link_to style.name, style_path(style) %></li>
         <% end %>
@@ -52,6 +61,10 @@
     <% end %>
     <ul class='dropdown-menu'>
     	<li><%= link_to "All", products_path %></li>
+      Ingredientes <b class="caret"></b>
+    <% end %>
+    <ul class='dropdown-menu'>
+    	<li><%= link_to "Todas", products_path %></li>
       <% Ingredient.all.each do |ingredient| %>
         <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
         <% end %>
@@ -69,6 +82,7 @@
 
 <div class="child">
  <%= link_to 'Menu', products_path, class: "btn btn-default btn-danger dropdown-toggle" %>
+ <%= link_to 'Menú', products_path, class: "btn btn-default btn-danger dropdown-toggle" %>
 </div>
 
 </section> <!-- end parent -->

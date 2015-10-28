@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
 	   <div class="responsive-container">
 		<div class="header">
 			<div class="logo">
@@ -17,13 +18,17 @@
 		<div class="clear">
 		</div>
 			
+=======
+<div class="responsive-container">
+		
+	<%= render partial: "shared/links" %>
+>>>>>>> spanish
 
 
-
-<div id="owl-demo" class="owl-carousel owl-theme"> 
-  <div class="item"><%= image_tag("slide2.jpg", :alt => " ") %></div>
-  <div class="item"><%= image_tag("slide1.jpg", :alt => " ") %></div>
-</div>
+	<div id="owl-demo" class="owl-carousel owl-theme"> 
+	  <div class="item"><%= image_tag("slide2.jpg", :alt => " ") %></div>
+	  <div class="item"><%= image_tag("slide1.jpg", :alt => " ") %></div>
+	</div>
 
 
  <script type="text/javascript">
@@ -58,19 +63,25 @@ $(document).ready(function() {
 
   <div class="row">
         <div class="col-md-4">
-          <h2>About Us</h2>
+          <h2>Acerca de Nosotros</h2>
           <%= link_to image_tag("CHOKO ONE.jpg"), about_path %>
-		  <p><%= link_to "View details", about_path, class: "btn btn-default" %></p>
+		  <p><%= link_to "Ver detalles", about_path, class: "btn btn-default" %></p>
         </div>
         <div class="col-md-4">
-          <h2>Our Menu</h2>
+          <h2>Nuestra Carta</h2>
           <%= link_to image_tag("COCONUT SHRIMP.jpg"), products_path %>
-		  <p><%= link_to "View details", products_path, class: "btn btn-default" %></p>
+		  <p><%= link_to "Ver detalles", products_path, class: "btn btn-default" %></p>
        </div>
         <div class="col-md-4">
+<<<<<<< HEAD
           <h2>Cocktail Menu</h2>
           <%= link_to image_tag("Happyhour.jpg"), drinks_path %>		  
           <p><%= link_to "View details", drinks_path, class: "btn btn-default" %></p>
+=======
+          <h2>Menú Cóctel</h2>
+          <%= link_to image_tag("Happyhour.jpg"), drinks_path %>		  
+          <p><%= link_to "Ver detalles", drinks_path, class: "btn btn-default" %></p>
+>>>>>>> spanish
         </div>
       </div>
 
@@ -85,16 +96,17 @@ $(document).ready(function() {
         <br />
 		<div class="main">
 			<div class="reservations">
-				<h2>Reservations</h2>
+				<h2>Reservas</h2>
 				<h2>+1 (234) 4567-890</h2>
 				
 			</div>
 			<div class="para">
-				<p>Open 9:00am - 10:00pm. Monday - Saturday. Closed Sunday <br />Location: Malecon entre 5 de Mayo y Callejon Constitución
+				<p>Abierto 9:00am - 10:00pm. Lunes - Sabado. Cerrado los Domingos<br />Localización: Malecon entre 5 de Mayo y Callejon Constitución
 La Paz, Baja California Sur</p>
 				
 			</div>
 		</div>
+<<<<<<< HEAD
 		<div class="clear">
 			
 		</div>
@@ -111,6 +123,16 @@ La Paz, Baja California Sur</p>
 			</div>
 		</div>
 		</div>
+=======
+
+<div class="clear">
+</div>
+
+<%= render partial: "shared/footer" %>
+
+</div>
+
+>>>>>>> spanish
 
 
 
