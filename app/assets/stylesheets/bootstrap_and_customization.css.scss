@@ -162,6 +162,11 @@ $jumbotron-bg:                                white;
     padding: 100px 45px 100px 45px;
 }
 
+.drink-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media(max-width:1200px){
     .responsive-container  {
