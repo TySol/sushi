@@ -1,28 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<<<<<<< HEAD
-	   <div class="responsive-container">
-		<div class="header">
-			<div class="logo">
-				 <%= link_to image_tag("logo.png", :alt => "logo"), root_path %>
-			</div>
-		</div>
-		<div class="top-menu">
-			<ul>
-      			<li><%= link_to "Home", root_path %></li>
-        		<li><%= link_to "About", about_path %></li>
-				<li><%= link_to "Menu", products_path %></li>
-				<li><%= link_to "Contact", contact_path %></li>
-			</ul>
-		</div>
-		<div class="clear">
-		</div>
-			
-=======
 <div class="responsive-container">
 		
 	<%= render partial: "shared/links" %>
->>>>>>> spanish
 
 
 	<div id="owl-demo" class="owl-carousel owl-theme"> 
@@ -39,8 +19,8 @@ $(document).ready(function() {
  
  	  autoPlay : true,
       navigation : false, // Show next and prev buttons
-      slideSpeed : 100,
-      paginationSpeed : 900,
+      slideSpeed : 200,
+      paginationSpeed : 400,
       // singleItem:true,
       autoHeight : true,
  	
@@ -52,7 +32,7 @@ $(document).ready(function() {
       itemsTablet: true,
        itemsMobile : true,
        itemsMobileSmall: true,
-    	itemsScaleUp : true,
+    itemsScaleUp : true,
  
   });
  
@@ -73,15 +53,9 @@ $(document).ready(function() {
 		  <p><%= link_to "Ver detalles", products_path, class: "btn btn-default" %></p>
        </div>
         <div class="col-md-4">
-<<<<<<< HEAD
-          <h2>Cocktail Menu</h2>
-          <%= link_to image_tag("Happyhour.jpg"), drinks_path %>		  
-          <p><%= link_to "View details", drinks_path, class: "btn btn-default" %></p>
-=======
           <h2>Menú Cóctel</h2>
           <%= link_to image_tag("Happyhour.jpg"), drinks_path %>		  
           <p><%= link_to "Ver detalles", drinks_path, class: "btn btn-default" %></p>
->>>>>>> spanish
         </div>
       </div>
 
@@ -106,24 +80,6 @@ La Paz, Baja California Sur</p>
 				
 			</div>
 		</div>
-<<<<<<< HEAD
-		<div class="clear">
-			
-		</div>
-        <br />
-		<div class="footer">
-			<br /> <br />
-			<div class="top-menu">
-				<ul>
-					<li><%= link_to "Home", root_path %></li>
-	        		<li><%= link_to "About", about_path %></li>
-					<li><%= link_to "Menu", products_path %></li>
-					<li><%= link_to "Contact", contact_path %></li>
-				</ul>
-			</div>
-		</div>
-		</div>
-=======
 
 <div class="clear">
 </div>
@@ -132,7 +88,6 @@ La Paz, Baja California Sur</p>
 
 </div>
 
->>>>>>> spanish
 
 
 
