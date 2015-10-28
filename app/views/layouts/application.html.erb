@@ -29,6 +29,24 @@
 	</div>
 
 
+ <script type="text/javascript">
+    
+            $(window).load(function() {
+                return $('#products').isotope({
+                  itemSelector: '.box',
+                  layoutMode: 'fitRows'
+                }, $('.box').css('margin-bottom', 50));
+              });
+
+            $(document).ready(function() {
+				  return $('#products').isotope({
+				    itemSelector: '.box',
+				    layoutMode: 'fitRows'
+				  }, $('.box').css('margin-bottom', 50));
+				});
+
+ </script>
+
 
 </body>
 </html>
