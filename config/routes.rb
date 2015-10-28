@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get "about" => "pages#about"
   get "menu" => "pages#menu"
   get "contact" => "pages#contact"
-  get "drinks" => "pages#drinks"
 
   resources :styles, only: [:new, :create, :show]
   resources :ingredients, only: [:new, :create, :show]

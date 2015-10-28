@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
   def create
     @product = current_user.products.build(product_params)
       if @product.save
-       redirect_to @product, notice: 'Artículo creado con éxito' 
+       redirect_to @product, notice: 'Product was successfully created.' 
       else
         render action: 'new'
     end
@@ -39,7 +39,7 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Elemento actualizado correctamente' }
+        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit }
@@ -53,7 +53,7 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url, notice: 'Elemento eliminado correctamente' }
+      format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -66,7 +66,7 @@ class ProductsController < ApplicationController
 
     def correct_user
       if current_user != @product.user and !current_user.admin?
-        flash[:danger] = "Usted no está autorizado para modificar esta"
+        flash[:danger] = "You are not authorized to edit this"
         redirect_to products_path
       end
     end
