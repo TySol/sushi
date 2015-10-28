@@ -7,12 +7,12 @@ $(window).load ->
 	$('#products').isotope
 	  itemSelector: '.box'
 	  layoutMode: 'fitRows'
-	  $('.box').css('padding-bottom',50)
+
 
 
 $(document).ready -> 
 	$('#products').isotope
 	  itemSelector: '.box'
 	  layoutMode: 'fitRows'
-	  $('.box').css('margin-bottom',50)
+
 
