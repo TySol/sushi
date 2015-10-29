@@ -4,15 +4,10 @@
 
 
 $(document).ready -> 
-	$('#products').isotope
-	  itemSelector: '.box'
-	  layoutMode: 'fitRows'
-
-
-$(window).load ->
-	$('#products').isotope
-	  itemSelector: '.box'
-	  layoutMode: 'fitRows'
-	  $('.box').css('padding-bottom',40)
-
+	$container = $('#products')
+	$container.imagesLoaded ->
+	  $container.fadeIn(1000).isotope
+	    layoutMode: 'fitRows'
+	    itemSelector: '.box'
+	
 
